@@ -307,6 +307,47 @@ ol .elipse {
     letter-spacing: 2px;
 }
 
+.container.border-req {
+    margin-top: -260px;
+
+}
+
+.col-md-3.req,
+.col-md-6.req {
+    border: 1px solid #ffffff;
+    height: 120px;
+}
+.col-md-3.req {
+    width: 280px;
+}
+
+.col-md-6.req {
+    width: 560px;
+}
+
+.title-spec {
+    font-family: Arial;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #FFB548;
+    text-transform: uppercase;
+}
+
+.des-spec {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+
+
+
+
 
 
 
