@@ -301,28 +301,33 @@ ol .elipse {
 .sub-title-req {
     text-transform: capitalize;
     padding-top: 145px;
-    margin-left: -110px;
+    margin-left: 10px;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 2px;
 }
 
-.container.border-req {
-    margin-top: -260px;
-
+.row.title {
+    display: flex;
 }
 
-.col-md-3.req,
-.col-md-6.req {
-    border: 1px solid #ffffff;
+.row.req {
+    margin-top: -30px;
+}
+
+.col-sm-3.req,
+.col-sm-6.req {
+    border: 1px solid #979797;
+}
+.col-sm-3.req {
+    width: 280px;
     height: 120px;
 }
-.col-md-3.req {
-    width: 280px;
-}
 
-.col-md-6.req {
+.col-sm-6.req {
     width: 560px;
+    height: 140px;
+    border-bottom-right-radius: 10px ;
 }
 
 .title-spec {
@@ -402,11 +407,79 @@ ol .elipse {
         
     }
 
+
+
+    .title-req {
+        padding: 130px 30px;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 3px;
+        
+    }
+
+    .sub-title-req {
+        padding-top: 145px;
+        margin-left: -110px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 2px;
+    }
+
+    .row.req {
+        margin-top: -30px;
+    }
+
+
+
 }
+
+
 
 @media (max-width: 766px) {
     .features {
         margin-bottom: 40px;
+    }
+
+    .title-req {
+        padding: 145px 20px;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 3px;
+        
+    }
+
+    .sub-title-req {
+        padding-top: 145px;
+        padding-left: -40px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    /* .row.req {
+        align-content: center;
+    }
+
+
+    .col-sm-3.req {
+        width: 170px;
+        height: 90px;
+    }
+
+    .col-sm-6.req {
+        width: 340px;
+        height: 90px;
+        border-bottom-right-radius: 10px ;
+    } */
+
+    .title-spec {
+        padding: 10px;
+        font-size: 16px;
+        line-height: 10px;
+    }
+
+    .des-spec {
+        font-size: 12px;
+        line-height: 16px;
     }
 }
 
