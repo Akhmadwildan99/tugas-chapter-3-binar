@@ -268,7 +268,7 @@ ol .elipse {
     position:absolute;
     background-image:  radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 20.22%, #080A0B 99.74%), url(img/requirements.png);
     background-size: cover;
-    background-position: center;
+    background-position: start;
     z-index: -60;
 
 }
@@ -311,20 +311,20 @@ ol .elipse {
     display: flex;
 }
 
-.row.req {
-    margin-top: -30px;
+.row.requi-1 {
+    margin-top: -60px;
 }
 
-.col-sm-3.req,
-.col-sm-6.req {
+.col-3.req,
+.col-6.req {
     border: 1px solid #979797;
 }
-.col-sm-3.req {
+.col-3.req {
     width: 280px;
     height: 120px;
 }
 
-.col-sm-6.req {
+.col-6.req {
     width: 560px;
     height: 140px;
     border-bottom-right-radius: 10px ;
@@ -425,7 +425,7 @@ ol .elipse {
         letter-spacing: 2px;
     }
 
-    .row.req {
+    .row.requi-1 {
         margin-top: -30px;
     }
 
@@ -455,21 +455,22 @@ ol .elipse {
         line-height: 15px;
     }
 
-    /* .row.req {
-        align-content: center;
+    .row.requi-1,
+    .row.requi {
+        justify-content: center;
     }
 
 
-    .col-sm-3.req {
-        width: 170px;
+    .col-3.req {
+        width: 200px;
         height: 90px;
     }
 
-    .col-sm-6.req {
-        width: 340px;
+    .col-6.req {
+        width: 400px;
         height: 90px;
         border-bottom-right-radius: 10px ;
-    } */
+    }
 
     .title-spec {
         padding: 10px;
@@ -517,6 +518,24 @@ ol .elipse {
 
     #game-features {
         max-height: 600px;
+    }
+
+    #system-req {
+        max-height: 600px;
+        
+    
+    }
+
+    .title-req {
+        padding: 70px 20px;   
+    }
+    
+    .sub-title-req {
+        padding-top: 60px;
+    }
+
+    .row.requi-1 {
+        margin-top: 10px;
     }
 
     
