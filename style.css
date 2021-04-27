@@ -407,12 +407,26 @@ ol .elipse {
 }
 
 .card {
-    max-width: 400px;
-    max-height: 150px;
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    margin-bottom: 40px;
+    max-width: 420px;
+    max-height: 180px;
+    background-color: rgba(255, 255, 255, 0.05) !important;
     mix-blend-mode: normal;
     opacity: 0.3; 
     border-radius: 10px;
+}
+
+.col.card-1 {
+    margin-top: 100px;
+    margin-left: 130px;
+}
+
+.col.card-2 {
+    margin-left: -50px
+}
+
+.col.card-3 {
+    margin-left: 100px;
 }
 
 .header-card {
@@ -430,7 +444,7 @@ ol .elipse {
     margin-top: 10px;
     margin-right: 100px;
     font-family: Arial;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     letter-spacing: 2px;
     color: #FFB548;
@@ -440,26 +454,43 @@ ol .elipse {
     margin-top: -10px;
     font-family: Open Sans;
     font-size: 18px;
-    line-height: 22px;
-    text-align: justify;
+    line-height: 20px;
     color: #FFFFFF;
     opacity: 0.5;
 }
 
-.social-media-link {
+.social-media-link-1 {
+    margin-left: 90px;
     margin-top: 10px;
-    margin-left: 60px;
     width: 18px;
     height: 20px;
+}
+
+.social-media-link-2 {
+    margin-left: 65px;
+    margin-top: 10px;
+    width: 18px;
+    height: 20px;
+}
+
+.social-media-link-3 {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 18px;
+    height: 20px;
+}
+
+.bi-twitter {
     background: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.3;
+
 }
 
 .des-card-1 {
-    padding: 10px;
+    padding-left: 10px;
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     color: #FFFFFF
 }
@@ -468,8 +499,8 @@ ol .elipse {
     padding: 10px;
     margin-top: -25px;
     font-family: Open Sans;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 12px;
+    line-height: 15px;
     color: #FFFFFF;
     opacity: 0.5;
 }
