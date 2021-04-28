@@ -375,7 +375,7 @@ ol .elipse {
     z-index: 1;
 }
 
-.col-6.score {
+.col-md-6.score {
     padding: 270px 0; 
 }
 
@@ -662,6 +662,31 @@ ol .elipse {
         font-size: 12px;
         line-height: 16px;
     }
+
+    .row.top-score {
+    }
+
+    
+    .col-md-6.score {
+        padding: 10px 0;
+    }
+
+    .title-score {
+        margin: 10px 20px;
+    }
+    .des-score {
+        margin: 10px 20px;
+        font-size: 18px;
+        line-height: 22px;
+
+    }
+    
+    
+    .tombol-2 {
+        margin: 10px 20px;
+        width: 150px;
+    }
+
 }
 
 
@@ -701,7 +726,7 @@ ol .elipse {
     }
 
     #system-req {
-        max-height: 600px;
+        max-height: 800px;
         
     
     }
@@ -717,5 +742,13 @@ ol .elipse {
     .row.requi-1 {
         margin-top: 10px;
     }
+
  
+}
+
+
+@media (max-width: 399px) {
+    .col-6.req {
+        width: 200px;
+    }
 }
