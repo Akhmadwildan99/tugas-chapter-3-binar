@@ -147,10 +147,10 @@
     padding-top: 100px;
 }
 
-.carousel-indicators li {
+.carousel-indicators > li {
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 15px !important;
+    height: 13px !important;
     background-color: #aaa;
 }
 
