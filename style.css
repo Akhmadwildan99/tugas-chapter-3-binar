@@ -361,7 +361,7 @@ ol .elipse {
     width: 100%;
     height: 900px;
     position:absolute;
-    background-image:radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0.9) 0%, rgba(0, 0, 0, 0.8) 51.1%, #080A0B 90.74%), url(img/top-score-bg.png);
+    background-image:radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgb(2, 2, 2) 0%, rgba(0, 0, 0, 1) 51.1%, #080A0B 99.74%), url(img/top-score-bg.png);
     background-size: cover;
     background-position: start;
     z-index: -60;
@@ -370,20 +370,20 @@ ol .elipse {
 
 #top-scores {
     width: 100%;
-    height: 900px;
+    height: 850px;
     position: relative;
     z-index: 1;
 }
 
 .col-6.score {
-    padding: 240px 70px; 
+    padding: 270px 0; 
 }
 
 .title-score {
     font-family: Arial;
     margin-bottom: 30px;
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 5vwvw;
+    line-height: 2vhvh;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -392,42 +392,33 @@ ol .elipse {
 .des-score {
     font-family: Open Sans;
     margin-bottom: 30px;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1vw;
+    line-height: 1vh;
     color: #FFFFFF;
 }
 
 
 .tombol-2 {
-    width: 200px;
+    width: 20vw;
     margin-bottom: 30px;
     font-weight: 700;
     font-family: open sans, sans-serif;
     font-size: 16px;
 }
 
+
+
 .card {
     margin-bottom: 40px;
-    max-width: 420px;
-    max-height: 180px;
+    width: 350px;
+    height: 180px;
     background-color: rgba(255, 255, 255, 0.05) !important;
     mix-blend-mode: normal;
     opacity: 0.3; 
-    border-radius: 10px;
+    border-radius: 12px;
+    position:relative;
 }
 
-.col.card-1 {
-    margin-top: 100px;
-    margin-left: 130px;
-}
-
-.col.card-2 {
-    margin-left: -50px
-}
-
-.col.card-3 {
-    margin-left: 100px;
-}
 
 .header-card {
     display:flex;
@@ -442,11 +433,12 @@ ol .elipse {
 
 .title-card-1 {
     margin-top: 10px;
-    margin-right: 100px;
+    margin-right: 130px;
     font-family: Arial;
     font-size: 22px;
     line-height: 28px;
     letter-spacing: 2px;
+    
     color: #FFB548;
 }
 
@@ -459,29 +451,16 @@ ol .elipse {
     opacity: 0.5;
 }
 
-.social-media-link-1 {
-    margin-left: 90px;
+.social-media-link {
     margin-top: 10px;
     width: 18px;
     height: 20px;
 }
 
-.social-media-link-2 {
-    margin-left: 65px;
-    margin-top: 10px;
-    width: 18px;
-    height: 20px;
-}
-
-.social-media-link-3 {
-    margin-left: 40px;
-    margin-top: 10px;
-    width: 18px;
-    height: 20px;
-}
 
 .bi-twitter {
-    background: #FFFFFF;
+    
+    color:rgb(251, 251, 255);
     mix-blend-mode: normal;
     opacity: 0.3;
 
@@ -590,6 +569,44 @@ ol .elipse {
 
     .row.requi-1 {
         margin-top: -30px;
+    }
+
+
+
+
+    .col-6.score {
+        padding: 300px 70px; 
+    }
+
+    .title-score {
+        font-family: Arial;
+        margin-bottom: 30px;
+        font-size: 50px;
+        line-height: 56px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    .des-score {
+        font-family: Open Sans;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    
+    .col.card-1 {
+        margin-top: 100px;
+        margin-left: 130px;
+    }
+    
+    .col.card-2 {
+        margin-left: -50px
+    }
+    
+    .col.card-3 {
+        margin-left: 100px;
     }
 
 
