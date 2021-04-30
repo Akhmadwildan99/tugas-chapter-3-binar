@@ -40,7 +40,7 @@
     bottom: 0;
     width: 100%;
     position:absolute;
-    background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url(img/main-bg.jpg);
+    background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url(asset/main-bg.jpg);
     background-size: cover;
     background-position: center;
     z-index: -100;
@@ -109,7 +109,7 @@
     bottom: 0;
     width: 100%;
     position:absolute;
-    background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(img/the-games-bg.jpg);
+    background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(asset/the-games-bg.jpg);
     background-size: cover;
     background-position: center;
     z-index: -100;
@@ -169,7 +169,7 @@
     width: 100%;
     height:870px;
     position:absolute;
-    background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url(img/features.jpg);
+    background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url(asset/features.jpg);
     background-size: cover;
     background-position: end;
     z-index: -50;
@@ -270,7 +270,7 @@ ol .elipse {
     width: 100%;
     height: 900px;
     position:absolute;
-    background-image:  radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 20.22%, #080A0B 99.74%), url(img/requirements.png);
+    background-image:  radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 20.22%, #080A0B 99.74%), url(asset/requirements.png);
     background-size: cover;
     background-position: start;
     z-index: -60;
@@ -365,7 +365,7 @@ ol .elipse {
     width: 100%;
     height: 900px;
     position:absolute;
-    background-image:radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgb(2, 2, 2) 0%, rgba(0, 0, 0, 1) 51.1%, #080A0B 99.74%), url(img/top-score-bg.png);
+    background-image:radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgb(2, 2, 2) 0%, rgba(0, 0, 0, 1) 51.1%, #080A0B 99.74%), url(asset/top-score-bg.png);
     background-size: cover;
     background-position: start;
     z-index: -60;
@@ -500,8 +500,7 @@ ol .elipse {
 .col-4.trophy img {
     width: 450px;
     height: 650px;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding: 50px 50px;
 }
 
 .col-8.trophy h3 {
@@ -555,6 +554,68 @@ input[placeholder='your email adress'] {
     height: 60px;
     border-radius: 5px;
 }
+
+footer .row.link {
+    justify-content: end;
+    padding: 50px 0 30px 0;
+    position:relative;
+}
+
+footer .row.link::after {
+    content: '';
+    position:absolute;
+    width: 90vw;
+    border-bottom: 1px solid #ffffff;
+    bottom: 0;
+    left: 0;
+}
+
+
+footer .row.link .col-1 a,
+footer .row.link .col-2 a {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+
+footer .row.link .col-1 a p,
+footer .row.link .col-2 a p {
+    padding-top: 10px;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.row.credit {
+    margin-top: 30px;
+}
+
+
+.row.credit .col-md-4 p {
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.row .col-md-8 p {
+    text-align: end;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
 
 
 
