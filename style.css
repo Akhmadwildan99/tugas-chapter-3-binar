@@ -6,9 +6,6 @@
      box-sizing: border-box;
  }
 
- body {
-    height: 6000px;
- }
 
 /* Navbar */
 .navbar {
@@ -416,11 +413,12 @@ ol .elipse {
     margin-bottom: 40px;
     width: 350px;
     height: 180px;
-    background-color: rgba(255, 255, 255, 0.192) !important;
+    background-color: rgba(66, 66, 66, 0.397) !important;
     mix-blend-mode: normal;
     opacity: 0.3; 
     border-radius: 12px;
     position:relative;
+    box-shadow: 5px 5px 5px rgba(255, 248, 248, 0.507);
 }
 
 
@@ -494,66 +492,89 @@ ol .elipse {
     width: 100%;
     height: 900px;
     background: #080A0B;
+    position:relative;
 }
 
-
-.col-4.trophy img {
-    width: 450px;
-    height: 650px;
-    padding: 50px 50px;
+.row.trophy {
+    padding-bottom: 60px;
 }
 
-.col-8.trophy h3 {
-    padding-top: 150px;
-    padding-left: 150px;;
+.col-md-4.trophy {
+
+    position:relative;
+    z-index: 5;
+}
+
+.col-md-4.trophy::before {
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-image:  radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url(asset/image\ .png);
+    z-index: 2;
+}
+
+.col-md-8.trophy h3 {
+    padding-top: 100px;
     font-family: Arial;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 3vw;
+    line-height: 5vh;
     letter-spacing: 2px;
     color: #FFFFFF;
+    z-index: 3;
 }
 
-.col-8.trophy h1 {
-    padding-left: 150px;
+.col-md-8.trophy h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;;
     font-family: Arial;
-    font-size: 80px;
-    line-height: 92px;
+    font-size: 10vw;
+    line-height: 10vh;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    z-index: 3;
 }
 
-.col-8.trophy p {
-    padding-left: 150px;
+.col-md-8.trophy p {
     font-family: Open Sans;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF
+    color: #FFFFFF;
+    z-index: 3;
 }
 
-.col-8.trophy form input {
-    margin-left: 150px;
-    width: 330px;
+.col-md-8.trophy form input {
+    margin-top: 12px;
+    width: 366.92px;
     height: 60px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 5px;
+    z-index: 3;
 }
 
 input[placeholder='your email adress'] {
     color: #ffffff !important;
     font-family: Open Sans;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 19px;
     opacity: 0.5;
     border-radius: 4px;
+    z-index: 3;
 }
 
-.col-8.trophy form button {
-    margin-left: 10px;
-    width: 230px;
+.col-md-8.trophy form button {
+    margin-left: 5px;;
+    width: 200px;
     height: 60px;
     border-radius: 5px;
+    z-index: 3;
 }
+
 
 footer .row.link {
     justify-content: end;
@@ -584,7 +605,7 @@ footer .row.link .col-2 a p {
     font-family: Open Sans;
     font-weight: bold;
     font-size: 10px;
-    line-height: 8px;
+    line-height: 13px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -594,7 +615,7 @@ footer .row.link .col-2 a p {
 }
 
 
-.row.credit .col-md-4 p {
+.row.credit .col-md-4.credit p {
     font-family: Open Sans;
     font-size: 14px;
     line-height: 19px;
@@ -603,7 +624,7 @@ footer .row.link .col-2 a p {
     opacity: 0.5;
 }
 
-.row .col-md-8 p {
+.row .col-md-8.credit p {
     text-align: end;
     font-family: Open Sans;
     font-weight: bold;
@@ -726,10 +747,11 @@ footer .row.link .col-2 a p {
     }
     
     .des-score {
+        padding-right: 30px;
         font-family: Open Sans;
         margin-bottom: 30px;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 24px;
+        line-height: 27px;
         color: #FFFFFF;
     }
     
@@ -746,8 +768,96 @@ footer .row.link .col-2 a p {
         margin-left: 100px;
     }
 
+    .col-md-8.trophy h3 {
+        padding-top: 150px;
+        padding-left: 150px;;
+        font-family: Arial;
+        font-size: 2.4vw;
+        line-height: 1vh;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+    }
+    
+    .col-md-8.trophy h1 {
+        padding-top: 15px;
+        padding-left: 150px;
+        padding-bottom: 15px;;
+        font-family: Arial;
+        font-size: 6.4vw;
+        line-height: 13vh;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    .col-md-8.trophy p {
+        padding-left: 150px;
+        font-family: Open Sans;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF
+    }
+    
+    .col-md-8.trophy form input {
+        margin-top: 12px;
+        margin-left: 150px;
+        width: 24vw;
+        height: 7vh;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 5px;
+    }
+    
+    input[placeholder='your email adress'] {
+        color: #ffffff !important;
+        font-family: Open Sans;
+        font-size: 15px;
+        line-height: 19px;
+        opacity: 0.5;
+        border-radius: 4px;
+    }
+    
+    .col-md-8.trophy form button {
+        margin-left: 10px;
+        width: 12vw;
+        height: 7vh;
+        border-radius: 5px;
+    }
 
 
+
+}
+
+@media (max-width: 992px) {
+    .col-md-4.trophy {
+        display: none;
+    }
+
+    .col-md-8.trophy {
+        position:relative;
+        z-index: 5;
+    }
+
+    .col-md-8.trophy h3,
+    .col-md-8.trophy h1,
+    .col-md-8.trophy p,
+    .col-md-8.trophy form input,
+    input[placeholder='your email adress'],
+    .col-md-8.trophy form button {
+        z-index: 3;
+    }
+
+    
+    .col-md-8.trophy::before {
+        content:'';
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-image:  radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url(asset/image\ .png);
+        z-index: -1;
+    }
 }
 
 
