@@ -582,6 +582,7 @@ footer .row.link::after {
     position:absolute;
     width: 90vw;
     border-bottom: 1px solid #ffffff;
+    
     bottom: 0;
     left: 0;
     margin-top: 50px;
@@ -608,6 +609,12 @@ footer .row.link::after {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+.col-lg-8.link-1 ul li a:hover {
+    color: #ffff;
+    opacity: 0.7;
 }
 
 .col-lg-4.link-2 ul {
@@ -617,12 +624,18 @@ footer .row.link::after {
 
 .col-lg-4.link-2 ul li {
     list-style-type: none;
-    margin-top: -200px;
+    margin-top: -180px;
     margin-right: 45px;
 }
 
 .col-lg-4.link-2 ul li a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+.col-lg-4.link-2 ul li a:hover {
+    color: #ffff;
+    opacity: 0.7;
 }
 
 
@@ -632,7 +645,7 @@ footer .row.link::after {
 }
 
 
-.row.credit .col-md-4.credit p {
+.row.credit .col-sm-4.credit p {
     font-family: Open Sans;
     font-size: 14px;
     line-height: 19px;
@@ -641,7 +654,7 @@ footer .row.link::after {
     opacity: 0.5;
 }
 
-.row .col-md-8.credit p {
+.row.credit .col-sm-8.credit p {
     text-align: end;
     font-family: Open Sans;
     font-weight: bold;
@@ -954,6 +967,11 @@ footer .row.link::after {
         width: 150px;
     }
 
+    .row.credit {
+        align-items: start;
+        text-align:start;
+    }
+
 }
 
 
@@ -1008,6 +1026,14 @@ footer .row.link::after {
 
     .row.requi-1 {
         margin-top: 10px;
+    }
+
+    .col-lg-4.link-2 ul li {
+        margin-top: -100px;
+    }
+
+    .row.credit .col-sm-8.credit p {
+        text-align: start;
     }
 
  
