@@ -574,7 +574,6 @@ input[placeholder='your email adress'] {
 
 footer .row.link {
     margin-top: 30px;
-    padding: 50px 0 30px 0;
     position:relative;
 }
 
@@ -585,20 +584,22 @@ footer .row.link::after {
     border-bottom: 1px solid #ffffff;
     bottom: 0;
     left: 0;
+    margin-top: 50px;
 }
 
 
-.col-8.link-1 ul {
+.col-lg-8.link-1 ul {
     display: flex;
-    justify-content: space-around;
-    text-align: end;
+    flex-direction: column;
+
 }
 
-.col-8.link-1 ul li {
+.col-lg-8.link-1 ul li {
     list-style-type: none;
+    margin-bottom: 20px;
 }
 
-.col-8.link-1 ul li a {
+.col-lg-8.link-1 ul li a {
     text-decoration: none;
     font-family: Open Sans;
     font-weight: bold;
@@ -609,16 +610,18 @@ footer .row.link::after {
     color: #FFFFFF;
 }
 
-.col-4.link-2 ul {
+.col-lg-4.link-2 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 }
 
-.col-4.link-2 ul li {
+.col-lg-4.link-2 ul li {
     list-style-type: none;
+    margin-top: -200px;
+    margin-right: 45px;
 }
 
-.col-4.link-2 ul li a {
+.col-lg-4.link-2 ul li a {
     text-decoration: none;
 }
 
@@ -826,6 +829,22 @@ footer .row.link::after {
         border-radius: 5px;
     }
 
+    .col-lg-8.link-1 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        text-align: end;
+    }
+    
+    .col-lg-8.link-1 ul li {
+        list-style-type: none;
+        margin-right: 37px;
+    }
+
+    .col-lg-4.link-2 ul li {
+        margin-top: 50px;
+    }
+
 
 
 }
@@ -913,8 +932,6 @@ footer .row.link::after {
         line-height: 16px;
     }
 
-    .row.top-score {
-    }
 
     
     .col-md-6.score {
