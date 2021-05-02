@@ -149,6 +149,7 @@
     width: 15px !important;
     height: 13px !important;
     background-color: #aaa;
+    margin-right: 30px !important;
 }
 
 .bnr-icon {
@@ -829,10 +830,10 @@ footer .row.link::after {
     }
     
     .col-md-8.trophy form input {
-        margin-top: 12px;
+        margin-top: 15px;
         margin-left: 150px;
         width: 24vw;
-        height: 7vh;
+        height: 10vh;
     }
     
     input[placeholder='your email adress'] {
@@ -845,8 +846,8 @@ footer .row.link::after {
     
     .col-md-8.trophy form button {
         margin-left: 10px;
-        width: 12vw;
-        height: 7vh;
+        width: 13vw;
+        height: 10vh;
         border-radius: 5px;
     }
 
